@@ -6,9 +6,6 @@ import {Routes, Route} from 'react-router-dom'
 function App() {
   return (
     <>
-
-    {/* <SignIn/> */}
-    {/* <Dashboard/> */}
     <Routes>
 
       <Route path='/' element={<SignIn/>}/>
