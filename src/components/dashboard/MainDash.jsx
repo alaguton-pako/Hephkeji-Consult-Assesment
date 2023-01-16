@@ -39,10 +39,10 @@ const MainDash = () => {
         </div>
       </div>
 
-      {/* <div className="bg-[#0d0d0d]">
-      </div> */}
+      <div className="bg-[#0d0d0d] h-10 w-full ">
+      </div>
 
-      <div className="w-auto">
+      <div className="w-[80%] mx-auto">
         <div className="pt-10 flex gap-10">
           <div className="h-10 mt-1 w-10">
             <img

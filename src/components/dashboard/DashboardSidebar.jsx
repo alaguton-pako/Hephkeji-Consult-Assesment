@@ -1,5 +1,7 @@
 import { useState } from "react";
 import logo from '../../assets/logo.png'
+import logo1 from '../../assets/Search.png'
+import logo2 from '../../assets/logo.png'
 import { AiOutlineBars } from "react-icons/ai";
 import MainDash from "./MainDash";
 
@@ -39,7 +41,7 @@ const DashboardSidebar = () => {
             >
                 
               {/* <img src={`.\src\assets/${Menu.src}.png`} /> */}
-              <img src={logo} alt=""/>
+              <img src={logo} alt="img"/>
               <span className={`${!open && "hidden"} origin-left duration-200`}>
                 {Menu.title}
               </span>

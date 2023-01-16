@@ -11,15 +11,19 @@ const SignInForm = () => {
             Choose your sign in method
           </p>
 
-          <div className="text-[#0d0d0d] relative w-full cursor-pointer font-bold p-4 bg-slate-50 ">
-            Continue with Google
-            <div className="absolute inset-y-[18px] mr-8 right-4 left-0">
+
+          <div className="text-[#0d0d0d] space-x-4 flex items-center  w-full cursor-pointer font-bold p-4 bg-slate-50 ">
+            <div className="mr-4">
                 <AiOutlineGoogle  size={20}/>
             </div>
+            Continue with Google
           </div>
-          <div className="text-[#0d0d0d] cursor-pointer font-bold p-4 mt-2 bg-slate-50">
-            Continue with Apple
+          <div className="text-[#0d0d0d] flex items-center  cursor-pointer font-bold p-4 mt-2 bg-slate-50">
+            <div className="mr-4">
             <AiFillApple size={20}/>
+
+            </div>
+            Continue with Apple
           </div>
 
           <input type="email" className="bg-slate-50 w-full p-4 mt-2" placeholder="Email" />
