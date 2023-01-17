@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineGoogle, AiFillApple } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const SignInForm = () => {
   return (
@@ -11,29 +12,36 @@ const SignInForm = () => {
             Choose your sign in method
           </p>
 
-
           <div className="text-[#0d0d0d] space-x-4 flex items-center  w-full cursor-pointer font-bold p-4 bg-slate-50 ">
             <div className="mr-4">
-                <AiOutlineGoogle  size={20}/>
+              <AiOutlineGoogle size={20} />
             </div>
             Continue with Google
           </div>
           <div className="text-[#0d0d0d] flex items-center  cursor-pointer font-bold p-4 mt-2 bg-slate-50">
             <div className="mr-4">
-            <AiFillApple size={20}/>
-
+              <AiFillApple size={20} />
             </div>
             Continue with Apple
           </div>
 
-          <input type="email" className="bg-slate-50 w-full p-4 mt-2" placeholder="Email" />
+          <input
+            type="email"
+            className="bg-slate-50 w-full p-4 mt-2"
+            placeholder="Email"
+          />
 
-          <input type="text" className="bg-slate-50 w-full p-4 mt-2" placeholder="password" />
+          <input
+            type="text"
+            className="bg-slate-50 w-full p-4 mt-2"
+            placeholder="password"
+          />
 
-          <button
-          className="bg-[#1f2558] text-white font-bold p-4 w-full text-center mt-4 rounded-3xl">
-            Log In
+          <Link to="/Dashboard">
+            <button className="bg-[#1f2558] text-white font-bold p-4 w-full text-center mt-4 rounded-3xl">
+              Log In
             </button>
+          </Link>
 
           <p className="text-center pt-4">
             or
@@ -41,7 +49,6 @@ const SignInForm = () => {
               Forgot password
             </span>
           </p>
-          
 
           <p className="text-center pt-4">
             Dont have an account?
